@@ -1,9 +1,11 @@
 import pandas as pd
 from fastapi import FastAPI
+import numpy as np
 
 app = FastAPI()
 
 data = pd.read_csv('Dataset/clean_data.csv')
+data_model = pd.read_csv('Dataset/model_data.csv')
 
 def time_format(x):
     return f'{ int(x//60)} h { int(x - 60* (x // 60 )) } m'
@@ -106,5 +108,55 @@ def get_director(director_name:str):
                             'revenue': str(subdata['revenue'][i])})
                 
     return {'director': director_name, 'return': total_return, 'movies': movies}
+
+@app.get('/recomendacion/{title}')
+def recomendacion(title:str):
+    model = data_model.copy()
+    model['genres'] = model['genres'].apply(lambda x: str(x).split(', '))
+
+    indice = model[model['title'] == title].index[0]
+    generos = model['genres'][indice]
+
+    coef = []
+
+    for h in model['genres']:
+        num = 0
+        for m in generos:
+                    
+            if(m in h): num += 1
+        coef.append(num)
+    
+    model['coef'] = coef
+    model = model[['coef','popularity','vote_average']]
+    X = model.values
+    
+    reference_point = X[:,0][indice], X[:,1][indice], X[:,2][indice]
+
+    # Calcular la distancia euclidiana entre los puntos y el punto de referencia
+    distances = np.linalg.norm(X - reference_point, axis=1)
+
+    # Definir un radio de cercanía para los puntos
+    radius = 0.6
+
+    # Filtrar los puntos cercanos al punto de referencia
+    nearby_points = X[distances < radius]
+    
+    ind_min = []
+    for z,  i in enumerate(nearby_points):
+        ind_min.append([sum(abs(reference_point - i)), z])
+        
+    ind_min.sort()
+    ind_min = [i[1] for i in ind_min][1:6]
+    
+    points = nearby_points[ind_min]
+
+    coordenadas = points[:, 1:]
+
+    # Buscar los índices donde las coordenadas coinciden
+    indices_coincidentes = np.where(np.isin(X[:, 1:], coordenadas).all(axis=1))[0]
+    recomended_movies = data_model.loc[indices_coincidentes, 'title'].values
+    recomended_movies = [str(i) for i in recomended_movies]
+    
+    return {'recomendend_movies': recomended_movies}
             
     
