@@ -136,7 +136,7 @@ def recomendacion(title:str):
     distances = np.linalg.norm(X - reference_point, axis=1)
 
     # Definir un radio de cercanía para los puntos
-    radius = 0.6
+    radius = 1.5
 
     # Filtrar los puntos cercanos al punto de referencia
     nearby_points = X[distances < radius]
