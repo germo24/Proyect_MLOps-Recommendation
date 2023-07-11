@@ -109,14 +109,20 @@ def get_director(director_name:str):
                 
     return {'director': director_name, 'return': total_return, 'movies': movies}
 
+
+
 @app.get('/recomendacion/{title}')
 def recomendacion(title:str):
     model = data_model.copy()
     model['genres'] = model['genres'].apply(lambda x: str(x).split(', '))
 
+    #Tomamos el indice de la película actual y los géneros a los que pertenece.
+    
     indice = model[model['title'] == title].index[0]
     generos = model['genres'][indice]
 
+    # Realizamos un coheficiente de relación entre la película actual y todas las otras.
+    
     coef = []
 
     for h in model['genres']:
@@ -135,8 +141,8 @@ def recomendacion(title:str):
     # Calcular la distancia euclidiana entre los puntos y el punto de referencia
     distances = np.linalg.norm(X - reference_point, axis=1)
 
-    # Definir un radio de cercanía para los puntos
-    radius = 1.5
+    # Definir un radio de cercanía para los puntos (le asignamos un valor grande para asegurar n recomendaciones)
+    radius = 20
 
     # Filtrar los puntos cercanos al punto de referencia
     nearby_points = X[distances < radius]
