@@ -4,8 +4,8 @@ import numpy as np
 
 app = FastAPI()
 
-data = pd.read_csv('Dataset/clean_data.csv')
-data_model = pd.read_csv('Dataset/model_data.csv')
+data = pd.read_csv('_src/Dataset/clean_data.csv')
+data_model = pd.read_csv('_src/Dataset/model_data.csv')
 
 def time_format(x):
     return f'{ int(x//60)} h { int(x - 60* (x // 60 )) } m'
@@ -134,6 +134,7 @@ def recomendacion(title:str):
     
     model['coef'] = coef
     model = model[['coef','popularity','vote_average']]
+    
     X = model.values
     
     reference_point = X[:,0][indice], X[:,1][indice], X[:,2][indice]
