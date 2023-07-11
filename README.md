@@ -75,7 +75,7 @@ Se han definido 6 funciones para los endpoints que serán consumidos en la API, 
  6. def **get_director( *`nombre_director`* )**:
    + Se ingresa el nombre de un director que se encuentre dentro de un dataset debiendo devolver el éxito del mismo medido a través del retorno. Además, deberá devolver el nombre de cada película con la fecha de lanzamiento, retorno individual, costo y ganancia de la misma, en formato lista.
 
-En este archivo encontrarás el uso de FastAPI y la aplicación de las funciones: [FastAPI](https://github.com/germo24/Proyect_MLOps-Recommendation/blob/main/main.py)
+En este archivo encontrarás la implementación de FastAPI y el desarrollo de las funciones: [main](https://github.com/germo24/Proyect_MLOps-Recommendation/blob/main/main.py)
 
 # EDA (Exploratory Data Analysis) y Sistema de recomendación
 
