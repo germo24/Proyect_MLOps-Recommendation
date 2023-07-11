@@ -85,7 +85,7 @@ El sistema de recomendación generado usa la distancia vectorial entre los punto
 
 
 <p align="center">
-<img src="./_src/images/img_2.png"  height=600>
+<img src="./_src/images/img_2.png"  height=500>
 </p>
 
 <sub> Gráficamente, tenemos todos los registros como puntos celestes, nuestro punto de referencia marcado por una cruz y una serie de recomendaciones en rojo, 
@@ -97,7 +97,7 @@ En este archivo encontrarás el EDA y una explicación más detallada de nuestro
 
 # **Archivos de interés y fuentes:**
 
-+ [Deployment](https://rendermlops.onrender.com/): El proyecto ha sido desplegado en un entorno en línea utilizando **Render**.
++ [Deployment](https://rendermlops.onrender.com/docs): El proyecto ha sido desplegado en un entorno en línea utilizando **Render**.
 
 + [Dataset original](https://drive.google.com/drive/folders/1nvSjC2JWUH48o3pb8xlKofi8SNHuNWeu): Aquí encontrarás una carpeta con los 2 archivos usados(movies_dataset.csv y credits.csv)
 
