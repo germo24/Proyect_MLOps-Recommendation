@@ -6,7 +6,7 @@
 
 # **Introducción**
 
-En este proyecto, adoptaremos el rol de un Data Enginner y MLOps (Machine Learning Operations) realizando una serie de transformaciones para la obtención de información útil y un modelo capaz de recomendar películas similares a aquella seleccionada. 
+En este proyecto, tendremos que realizar una serie de transformaciones para la obtención de información útil y un modelo capaz de recomendar películas similares a aquella seleccionada. 
 Para esto habrá que realizar todos los procesos necesarios presentes en el ciclo de vida de un dato desde la carga, el tratamiento hasta la selección de los componentes o variables que se utilizaran en nuestro Modelo de Machine Learning para su posterior despliegue y uso. Cabe aclarar que el proyecto fue desarrollado en el lapso de una semana y, por tanto, puede tener mejoras pero lo que se busca es un Minimun Viable Product que se entragará a producción.
 
 Adoptaremos el rol de una persona que es contratada como Data Scientist en una start-up que provee servicios de agregación de plataformas streaming. Nuestro objetivo principal será crear un modelo de Machine Learning capaz de proporcionar recomendaciones de películas similares a nuestros clientes. Al llegar nos damos cuenta que la madurez de los datos no es óptima, hay datos sin transformar, anidados y no tenemos un proceso automatizado para dar con los mismos por lo que nos tocará realizar una serie de transformaciones para obtener información.
