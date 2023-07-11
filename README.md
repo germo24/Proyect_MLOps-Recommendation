@@ -69,7 +69,7 @@ Se han definido 6 funciones para los endpoints que serán consumidos en la API, 
    + Ejemplo de retorno: *Se produjeron `X` películas en el país `X`*
 
  5. def **productoras_exitosas( *`Productora`: str* )**:
-   + Se ingresa la productora, entregandote el revunue total y la cantidad de peliculas que realizo. 
+   + Se ingresa la productora, entregandote el revenue total y la cantidad de peliculas que realizo. 
    + Ejemplo de retorno: *La productora `X` ha tenido un revenue de `x`*
 
  6. def **get_director( *`nombre_director`* )**:
@@ -106,4 +106,4 @@ En este archivo encontrarás el EDA y una explicación más detallada de nuestro
 
 + [Diccionario de datos](https://docs.google.com/spreadsheets/d/1QkHH5er-74Bpk122tJxy_0D49pJMIwKLurByOfmxzho/edit#gid=0): Diccionario con algunas descripciones de las columnas disponibles en el dataset.
 
-+ [Video explicativo]() Un video propio explicando algunos conceptos sobre el proyecto.
++ [Video explicativo](https://www.youtube.com/watch?v=6X3lFgMQs54) Un video propio explicando algunos conceptos sobre el proyecto.
