@@ -107,3 +107,5 @@ En este archivo encontrarás el EDA y una explicación más detallada de nuestro
 + [Diccionario de datos](https://docs.google.com/spreadsheets/d/1QkHH5er-74Bpk122tJxy_0D49pJMIwKLurByOfmxzho/edit#gid=0): Diccionario con algunas descripciones de las columnas disponibles en el dataset.
 
 + [Video explicativo](https://www.youtube.com/watch?v=6X3lFgMQs54) Un video propio explicando algunos conceptos sobre el proyecto.
+
+Autor: Germán Voss
