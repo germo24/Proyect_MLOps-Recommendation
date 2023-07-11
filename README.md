@@ -90,7 +90,11 @@ El sistema de recomendación generado usa la distancia vectorial entre los punto
 
 Gráficamente, tenemos todos los registros como puntos celestes, nuestro punto de referencia marcado por una cruz y una serie de recomendaciones en rojo, que como pueden ver son cercanas a la película actual.
 
+<p align="center">
+<img src="./_src/images/vectores.jpg"  height=300>
+</p>
 
+<sub> Representación ficticia del modelo trazando un vector entre los puntos 'P' y 'O' <sub/>
 
 En este archivo encontrarás el EDA y una explicación más detallada de nuestro sistema de recomendación: [EDA](https://github.com/germo24/Proyect_MLOps-Recommendation/blob/main/EDA.ipynb)
 
