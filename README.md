@@ -92,7 +92,7 @@ que como pueden ver son cercanas a la película actual.
 
 ## <h2 align=center> </h2>
 <p align="center">
-<img src="./_src/images/image_2.png"  height=200>
+<img src="./_src/images/img_2.png"  height=200>
 </p>
 
 En este archivo encontrarás en EDA en la primera parte y una explicación más detallada de nuestro sistema de recomendación: [EDA.ipynb](). 
