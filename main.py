@@ -13,7 +13,7 @@ def time_format(x):
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to my proyect. The API conecction is working on!"}
+    return {"message": "Welcome to my proyect. The API conecction is working on!. Author: Germán Voss"}
 
 @app.get('/peliculas_idioma/{language}')
 def peliculas_idioma(language:str):
