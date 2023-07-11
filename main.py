@@ -106,6 +106,10 @@ def get_director(director_name:str):
                 movies.append({'title': str(subdata['title'][i]), 'date_release': str(subdata['release_year'][i]),
                             'return': str(subdata['return'][i]), 'budget': str(subdata['budget'][i]),
                             'revenue': str(subdata['revenue'][i])})
+    
+    # Luego de recoger los retornos de cada película lo dividimos por la cantidad al ser el retorno promedio.
+    
+    total_return = total_return / len(movies)
                 
     return {'director': director_name, 'return': total_return, 'movies': movies}
 
