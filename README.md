@@ -85,7 +85,7 @@ El sistema de recomendación generado usa la distancia vectorial entre los punto
 
 
 <p align="center">
-<img src="./_src/images/img_2.png"  height=700>
+<img src="./_src/images/img_2.png"  height=650>
 </p>
 
 Gráficamente, tenemos todos los registros como puntos celestes, nuestro punto de referencia marcado por una cruz y una serie de recomendaciones en rojo, que como pueden ver son cercanas a la película actual.
