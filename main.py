@@ -108,8 +108,8 @@ def get_director(director_name:str):
                             'revenue': str(subdata['revenue'][i])})
     
     # Luego de recoger los retornos de cada película lo dividimos por la cantidad al ser el retorno promedio.
-    
-    total_return = total_return / len(movies)
+    if movies != 0:
+        total_return = total_return / len(movies)
                 
     return {'director': director_name, 'return': total_return, 'movies': movies}
 
