@@ -108,4 +108,6 @@ En este archivo encontrarás el EDA y una explicación más detallada de nuestro
 
 + [Video explicativo](https://www.youtube.com/watch?v=6X3lFgMQs54) Un video propio explicando algunos conceptos sobre el proyecto.
 
++ [Linkedin](https://www.linkedin.com/in/germ%C3%A1n-voss-7459aa266/) Perfil oficial de Linkedin
+
 Autor: Germán Voss
